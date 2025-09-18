@@ -1,0 +1,141 @@
+*{ margin: 0%;
+    padding: 0%;}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+header{
+    display: flex;
+    background:dodgerblue;
+    width: 100%;
+}
+nav{ 
+    align-items: end;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 4em;
+    width:100%;
+    a{
+       font-size: 2em;
+       border: solid white;
+       border-radius:  15px ; 
+       text-decoration: none;
+       color: white;
+    }
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    img{
+        width:100%;
+       
+    }
+    #texto{
+        width: 20%;  
+        padding: 3em;  
+    } 
+    h4{
+        font-size:1.25em;
+        color: gray;
+        font-weight: lighter;
+        #politicas{
+            color: dodgerblue;
+            font-weight: lighter;
+        }
+    }
+    p{
+        font-size:1.25em;
+        color: gray;
+        span{
+         color: grey;
+         font-weight: bolder;
+        }
+     }
+    form{
+        background: dodgerblue;
+        display: flex;
+        flex-wrap: wrap;
+        width: 20%;
+        justify-content: center;
+        margin-left: -3em;
+        img{
+            width: 65%;
+        }
+        h3{
+            color: white;
+            font-size: 1.5em;
+            margin-top: 1em;
+        }
+        #datos{
+            width: 90%;
+            input{
+                width: 100%;
+                border: solid black;
+                font-size: 1.25em;
+            }
+        }
+        h6{
+            color:brown;
+            text-align:left;
+            font-size: 1.25em;
+        }
+        #politica{
+            color: white;
+            font-size: 1.25em;
+            width: 80%;
+            span{
+                color: darkblue;
+            }
+        }
+        #boton{
+            font-size: 1.75em;
+            color: white;
+            font-weight: bolder;
+            background: gray;
+        }
+    }
+}
+
+@media (max-width: 690px){
+   
+    header{
+        background:white;
+        img{
+            display:none;
+        }
+    }
+    nav{ 
+        margin-left: 0em;
+        width:100%;
+        flex-direction: column;
+        a{
+           color: black;
+           justify-content: center;
+           width: 100%;
+           text-align: center;
+        }
+    }
+    #texto{
+        display: none;
+    }
+    main{
+        form{
+            width: 100%;
+            margin-left: 0em;
+            #politica{
+               width: 47%;
+               justify-content: flex-start;
+            }
+         }
+    }
+    #enviar{
+        width: 100%;
+       text-align:   center;
+    }
+
+}
+
+

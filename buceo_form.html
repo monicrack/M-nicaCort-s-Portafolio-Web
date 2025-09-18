@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Buceo</title>
+    <link rel="stylesheet" href="buceo.css">
+   <-- <link rel="stylesheet" href="__MACOSX/Ex-Marcas-6Febr23/icomoon/demo-files/._demo.css">-->
+    
+</head>
+
+<body>
+    <header>
+          <img src="Ex-Marcas-6Febr23/imagenes/Logo.webp" alt="">
+            <nav>
+                <a href=""><span class="icon-home"></span></a>
+                <a href="">Inicio</a>
+                <a href="">Cursos</a>
+                <a href="">Instalaciones</a>
+                <a href="">Instructores</a>
+                <a href="">Calendario</a>
+                <a href="">Contacto</a>
+            </nav>
+        </header>
+    <main> 
+        <div id="texto">
+        <img src="Ex-Marcas-6Febr23/imagenes/img-buceo.jpeg" alt="">
+        <h4> Al aceptar las <span id="politicas"> políticas de privacidad</span> asumes lo siguiente sobre tus datos:</h4>
+        <p><span>Responsable:</span> Nombre del alumno</p>
+        <p><span>Finalidad:</span>  Enviarte la guía de cómo disfrutar con seguridad el buceo.</p>
+        <p><span> Legitimación:</span> Tu consentimiento (como dice Amaral, sin ti no soy nada)</p>
+        <p><span> Destinatarios:</span>  Los datos lo guardará ActiveCompaing, mi proveedor de marketing 
+            que está acogido al acuerdo de Seguridad EU-US Privacy. Tus datos estarán más 
+            seguros que la Casa Blanca.</p>
+        <p><span> Derechos:</span> Por supuesto tendrás derechos, entre otros, a acceder, rectificar,
+            limitar tus datos</p>
+        </div>
+       
+
+        <form action="buceo.php" method="post">
+            <img src="Ex-Marcas-6Febr23/imagenes/Logo.webp" alt="">
+            <h3>Deseo formar parte del club</h3>
+            <div id="datos">
+                <input type="text" name="nombre" placeholder="Nombre*" size="20"  required>
+                <input type="text"name="email"placeholder="Correo electrónico*" size="20" required>
+                <input type="text"name=telefono placeholder="Teléfono (opcional)" size="9">
+                <h6>*Campo obligatorio</h6>
+            </div>
+            
+            <div id="politica">
+                <input type="checkbox" name="politica" value="1" required>
+                <label for="">Acepto las <span> políticas de privacidad.</span></label>
+                <input type="checkbox" name="notificacion" value="1" >
+                <label for="">Acepto recibir notificaciones</label>
+            </div>
+            <div id="enviar">
+                <input id="boton" type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
